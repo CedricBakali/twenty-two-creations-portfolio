@@ -124,8 +124,11 @@ section{
 }
 
 #portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     background-color: #f9f9f9;
-    padding: 80px 50px;
+    gap: 20px;
+    padding: 50px 20px;
 }
 
 /* Container for project cards */
@@ -197,6 +200,29 @@ section{
 }
 
 
+/* For devices smaller than 768px (tablets/phones) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    #hero h2 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+}
+
+
+
 
 
 footer{
@@ -208,4 +234,9 @@ footer{
    bottom: 0;
    width: 100%;
    margin-top: 20px;
+}
+
+#hero {
+    background: url("images/bg.png") no-repeat center center/cover;
+    background-attachment: fixed;
 }
