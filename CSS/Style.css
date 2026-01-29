@@ -1,0 +1,210 @@
+*{
+   margin : 0;
+   padding : 0;
+   box-sizing: border-box;
+    
+}
+
+
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;      /* adjust to your logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00ffff;
+    letter-spacing: 2px;
+}
+
+
+header{
+    display: flex;
+    background-color: #111;      /* dark background */
+    color: "white";              /* light text */
+    padding : 20px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body{
+
+   text-align: center;
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+
+   color: #333;
+   padding: 20px;
+}
+
+#header h1{
+    font-size: 36px;
+    color: #eef1ee;
+}
+
+head{
+    background-color: #333;
+    justify-content: space-between;
+    color: #06ce10;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #00ffff;
+    text-decoration: underline;
+}
+
+section{
+   margin-bottom: 20px;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#hero{
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#hero {
+    background-color: #00ffff;;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #5B2C83;
+}
+
+#hero p {
+    font-size: 18px;
+    color: #333;
+}
+
+
+#about{
+    background-color: #f4f4f4;
+    padding: 80px 50px;
+    margin-bottom: 20px;
+}
+
+#about h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#about p{
+    font-size: 16px;
+    color: #666;
+}
+
+#portfolio {
+    background-color: #f9f9f9;
+    padding: 80px 50px;
+}
+
+/* Container for project cards */
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 14px;
+    color: #555;
+}
+
+.project-btn {
+    background-color: #00ffff;    /* cyan color */
+    color: #111;                  /* text color */
+    border: none;                 /* remove default border */
+    padding: 10px 20px;           /* space inside button */
+    border-radius: 5px;           /* rounded corners */
+    cursor: pointer;              /* pointer on hover */
+    font-weight: bold;
+    transition: 0.3s;             /* smooth hover effect */
+}
+
+.project-btn:hover {
+    background-color: #009999;    /* darker shade on hover */
+    color: white;
+}
+
+#portfolio {
+    background-color: #f9f9f9;
+    padding: 80px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* space between cards */
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+#typing {
+    color: #D4AF37;
+    font-weight: bold;
+    border-right: 2px solid #00ff15;
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+
+
+
+footer{
+   text-align: center;
+   padding: 10px 0;
+   background-color: #333;
+   color: #fff;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   margin-top: 20px;
+}
