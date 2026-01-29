@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twenty Two Creations | Graphic Design Portfolio</title>
     <link rel="stylesheet" href="CSS/Style.css">
+    <source src="videos/hero-bg.mp4" type="video/mp4">
+
 </head>
 <body>
 
@@ -28,16 +30,17 @@
     </header>
     <main>
 
-    <section id = "hero">
-        <h2>Welcome to Twenty Two Creations</h2>
-        <p>Your one-stop destination for creative design solutions.</p>
-        <p>Turning ideas into visual stories.</p>
+<section id="hero">
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="videos/hero-bg.mp4" type="video/mp4">
+    </video>
 
+    <div class="hero-content">
         <h2>I am a <span id="typing"></span></h2>
-        
+        <p>Your one-stop destination for creative design, web development solutions.</p>
+    </div>
+</section>
 
-        
-    </section>
 </main>
 
 
@@ -64,8 +67,17 @@
         </div>
 
         <div class="project">
-            <h3>Project 3: File transfer desktop application</h3>
+            <h3>Project 3: UDP-File transfer desktop application</h3>
             <p>A sleek and user-friendly desktop application designed to enhance efficiency when transfering files between two desktops on same network.</p>
+            <button class="project-btn" onclick="window.location.href='https://github.com/CedricBakali/UDP-File-Transfer-Tool.git'">View Repository</button>
+
+
+        </div class="project">
+        <div class="project">
+            <h3>Project 4: Hostel Management System</h3>
+            <p>This system allows administrators to manage student records, room allocation, and basic updates through a graphical interface. It demonstrates database integration, form validation, and modular GUI design for real-world management tasks.</p> 
+            <button class="project-btn" onclick="window.location.href='https://github.com/CedricBakali/Hostel-Management-System.git'">View Repository</button>
+        </div>
     </section>
 
     <section id="contact">
