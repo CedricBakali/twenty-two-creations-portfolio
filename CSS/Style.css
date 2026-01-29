@@ -10,9 +10,16 @@
 .brand {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.brand:hover {
+    transform: scale(1.05);
 }
 
 .logo-img {
+    transition: transform 0.4s ease;
     width: 50px;      /* adjust to your logo size */
     height: auto;
     margin-right: 10px;
@@ -26,16 +33,30 @@
 }
 
 
-header{
+header {
     display: flex;
-    background-color: #111;      /* dark background */
-    color: "white";              /* light text */
-    padding : 20px 50px;
     align-items: center;
     justify-content: space-between;
+
+    padding: 15px 50px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(17, 17, 17, 0.4);   /* transparent dark */
+    backdrop-filter: blur(10px);        /* glass blur */
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+
 body{
+
+   padding-top: 90px;
 
    text-align: center;
    font-family: Arial, sans-serif;
@@ -59,17 +80,34 @@ head{
     margin-bottom: 20px;
 }
 
-nav a{
+nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
-nav a:hover{
-    color: #00ffff;
-    text-decoration: underline;
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #00ffff;
+    transition: width 0.3s ease;
 }
+
+nav a:hover {
+    color: #00ffff;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
 
 section{
    margin-bottom: 20px;
@@ -218,6 +256,24 @@ section{
 }
 
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #00ffff, #5B2C83, #ff0080);
+    background-size: 600% 600%;
+    animation: gradientMove 15s ease infinite;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
 
 
@@ -244,6 +300,17 @@ section{
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
