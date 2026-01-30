@@ -12,6 +12,13 @@
 
 </head>
 <body>
+    <div id="loader">
+    <div class="loader-content">
+        <img src="Images/twentyWhite.png" alt="Logo">
+        <p>Loading...</p>
+    </div>
+</div>
+
 
     <header>
 
@@ -22,10 +29,10 @@
         
         
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <main>
@@ -40,12 +47,15 @@
 
     <div class="hero-content">
         <h2>I am a <span id="typing"></span></h2>
-        <p>Your one-stop destination for creative design, web development solutions.</p>
+        <p>Your one-stop destination for creative design and web development solutions.</p>
+
+        <a href="#portfolio" class="btn">View My Work</a>
     </div>
 </section>
 
 </main>
 
+<div class="section-divider"></div>
 
 <section id ="about" class="reveal">
     <h2>About Us</h2>
@@ -57,37 +67,53 @@
             </p>
     </section>
 
+    <div class="section-divider"></div>
+
     <section id="portfolio" class="reveal">
         <h2>Our Portfolio</h2>
-        <div class="project">
-            <h3>Project 1: Branding for MOFAM Organisation</h3>
-            <p>A comprehensive branding package including logo design, business cards, and social media graphics.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2: DMI-SJBU Voting System</h3>
+    
+        <h3 class="portfolio-title">Development projects</h3>
+        <div class="project reveal">
+            <h3>Project 1: DMI-SJBU Voting System</h3>
             <p>A modern, Secure & Simple Electronic Voting for the 2025 Student Elections.</p>
             <button class="project-btn" onclick="window.location.href='https://dmiv.netlify.app/'">View Project</button>
         </div>
 
-        <div class="project">
-            <h3>Project 3: UDP-File transfer desktop application</h3>
+        <div class="project reveal">
+            <h3>Project 2: UDP-File transfer desktop application</h3>
             <p>A sleek and user-friendly desktop application designed to enhance efficiency when transfering files between two desktops on same network.</p>
             <button class="project-btn" onclick="window.location.href='https://github.com/CedricBakali/UDP-File-Transfer-Tool.git'">View Repository</button>
+        </div>
 
-
-        </div class="project">
-        <div class="project">
-            <h3>Project 4: Hostel Management System</h3>
+        <div class="project reveal">
+            <h3>Project 3: Hostel Management System</h3>
             <p>This system allows administrators to manage student records, room allocation, and basic updates through a graphical interface. It demonstrates database integration, form validation, and modular GUI design for real-world management tasks.</p> 
             <button class="project-btn" onclick="window.location.href='https://github.com/CedricBakali/Hostel-Management-System.git'">View Repository</button>
         </div>
+
+        <h3 class="portfolio-title">Graphic Design projects</h3>
+        <div class="graphic grid">
+            <img src="Images/back.png" class="graphic-img reveal">
+            <img src="Images/wishlist.png" class="graphic-img reveal">
+            <img src="Images/xmax_flex.png" class="graphic-img reveal">
+            <img src="Images/Dec1.png" class="graphic-img reveal">
+            <img src="Images/Deli.jpg" class="graphic-img reveal">  
+            <img src="Images/kom.jpg" class="graphic-img reveal">
     </section>
 
+    <div class="section-divider"></div>
+
     <section id="contact" class="reveal">
-        <h2>Contact Us</h2>
-        <p>If you're interested in working with us or have any questions, feel free to reach out!</p>
-        <p><a href="mailto:bakalicedric@gmail.com">Email Us</a></p>
-    </section>
+    <h2>Contact Me</h2>
+    <p>Let’s work together on your next project.</p>
+
+    <div class="contact-links">
+        <a href="bakalicedric@gmail.com">📧 Email</a>
+        <a href="https://wa.me/265983081808" target="_blank">💬 WhatsApp</a>
+        <a href="https://github.com/CedricBakali" target="_blank">🐙 GitHub</a>
+    </div>
+</section>
+
 
     <footer>
         <p>© 2026 Twenty Two Creations. All Rights Reserved.</p>
