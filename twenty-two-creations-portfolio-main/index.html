@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twenty Two Creations — Professional graphic design, web development, and digital branding studio based in Malawi.">
+    <title>Twenty Two Creations | Design & Development Studio</title>
+    <link rel="icon" type="image/png" href="Images/twentyWhite.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div id="loader">
+    <div class="loader-content">
+        <img src="Images/twentyWhite.png" alt="Twenty Two Creations Logo">
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+    <div class="brand" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <img src="Images/twentyWhite.png" alt="Twenty Two Creations Logo" class="logo-img">
+        <span class="logo-text">Twenty<span class="logo-accent">Two - Creations</span></span>
+    </div>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Work</a>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+    <a href="#hero" class="mob-link">Home</a>
+    <a href="#about" class="mob-link">About</a>
+    <a href="#services" class="mob-link">Services</a>
+    <a href="#portfolio" class="mob-link">Work</a>
+    <a href="#contact" class="mob-link">Hire Me</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="videos/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content reveal">
+        <p class="hero-eyebrow">Based in Malawi · Available Worldwide</p>
+        <h1>I am a <span id="typing"></span><span class="cursor">|</span></h1>
+        <p class="hero-sub">Turning ideas into powerful visuals and digital experiences.<br>Design that speaks. Code that works.</p>
+        <div class="hero-actions">
+            <a href="#portfolio" class="btn-primary">View My Work</a>
+            <a href="#contact" class="btn-ghost">Let's Talk →</a>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip reveal">
+    <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Experience</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Projects Completed</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Client Satisfaction</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">2</span><span class="stat-label">Core Disciplines</span></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="about-inner reveal">
+        <div class="about-text">
+            <p class="section-label">About Us</p>
+            <h2>Where creativity<br>meets <em>code</em></h2>
+            <p>Twenty Two Creations is a modern creative and technology studio built on the fusion of visual art and programming. We produce professional graphic designs that communicate ideas clearly and attractively — while also developing web solutions, apps, and digital tools.</p>
+            <p>Our work spans branding, flyers, posters, social media content, system development, and web technologies. Driven by creativity, innovation, and continuous learning, we bring ideas to life through design and code.</p>
+            <a href="#contact" class="btn-primary" style="margin-top:2rem;display:inline-block;">Start a Project</a>
+        </div>
+        <div class="about-skills">
+            <div class="skill-item">
+                <div class="skill-label"><span>Graphic Design</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-label"><span>Web Development</span><span>75%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-label"><span>UI/UX Design</span><span>80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-label"><span>Brand Strategy</span><span>70%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <div class="section-header reveal">
+        <p class="section-label">What I Offer</p>
+        <h2>Services</h2>
+    </div>
+    <div class="services-grid reveal">
+        <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>Brand Identity</h3>
+            <p>Logo design, colour systems, typography, and brand guidelines that make your business unforgettable.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🌐</div>
+            <h3>Web Development</h3>
+            <p>Clean, fast, mobile-friendly websites built with HTML, CSS, JavaScript, and modern frameworks.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Social Media Design</h3>
+            <p>Eye-catching posts, covers, and content kits that keep your brand consistent across every platform.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🖨️</div>
+            <h3>Print Design</h3>
+            <p>Flyers, posters, banners, and event materials designed to grab attention in the real world.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Software Development</h3>
+            <p>Desktop apps, management systems, and custom software solutions built with Python and modern tools.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">📣</div>
+            <h3>Digital Marketing</h3>
+            <p>Social media strategy, content planning, and ad creative that helps your business grow online.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <div class="section-header reveal">
+        <p class="section-label">My Work</p>
+        <h2>Portfolio</h2>
+    </div>
+
+    <!-- Dev Projects -->
+    <div class="portfolio-category reveal">
+        <h3 class="portfolio-title"><span>Development Projects</span></h3>
+    </div>
+    <div class="dev-grid reveal">
+        <div class="project-card">
+            <div class="project-tag">Web App</div>
+            <h3>DMI-SJBU Voting System</h3>
+            <p>A modern, secure electronic voting platform built for the 2025 DMI-SJBU Student Elections. Features real-time vote counting, secure authentication, and a clean admin dashboard.</p>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://dmiv.netlify.app/" target="_blank" class="project-btn">View Live ↗</a>
+        </div>
+        <div class="project-card">
+            <div class="project-tag">Desktop App</div>
+            <h3>UDP File Transfer Tool</h3>
+            <p>A sleek desktop application for fast file transfer between two computers on the same network using the UDP protocol. Built with Python and Tkinter for a smooth GUI experience.</p>
+            <div class="project-tech"><span>Python</span><span>Tkinter</span><span>UDP Sockets</span></div>
+            <a href="https://github.com/CedricBakali/UDP-File-Transfer-Tool.git" target="_blank" class="project-btn">View Repository ↗</a>
+        </div>
+        <div class="project-card">
+            <div class="project-tag">Desktop App</div>
+            <h3>Hostel Management System</h3>
+            <p>A full-featured admin system for managing student records, room allocation, and fee tracking. Demonstrates database integration, form validation, and modular GUI design.</p>
+            <div class="project-tech"><span>Python</span><span>SQLite</span><span>Tkinter</span></div>
+            <a href="https://github.com/CedricBakali/Hostel-Management-System.git" target="_blank" class="project-btn">View Repository ↗</a>
+        </div>
+    </div>
+
+    <!-- Graphic Design Projects -->
+    <div class="portfolio-category reveal" style="margin-top:4rem;">
+        <h3 class="portfolio-title"><span>Graphic Design Projects</span></h3>
+    </div>
+    <div class="graphic-grid reveal">
+        <div class="graphic-item">
+            <img src="Images/back.png" alt="Design Project — Background Artwork" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Background Artwork</p>
+                <p class="graphic-desc">Digital art composition</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="Images/wishlist.png" alt="Wishlist Promotional Design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Wishlist Promo</p>
+                <p class="graphic-desc">Social media promotional flyer</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="Images/xmax_flex.png" alt="Christmas Flex Design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Xmas Flex</p>
+                <p class="graphic-desc">Festive promotional design</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="Images/Dec1.png" alt="December Campaign Design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">December Campaign</p>
+                <p class="graphic-desc">Event promotional material</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="Images/Deli.jpg" alt="Deli Brand Design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Deli Branding</p>
+                <p class="graphic-desc">Restaurant brand identity</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="Images/kom.jpg" alt="KOM Design Project" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Mic battle Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="Images/uchie.png" alt="KOM Design Project 2" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Avon product Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="Images/salit_flyer.png" alt="KOM Design Project" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Salit loan flyer Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="Images/furnitureF.png" alt="KOM Design Project" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Furniture Shop flyer Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="Images/beefinal.png" alt="KOM Design Project" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Beef shop flyerDesign</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="Images/MzuniFinal.png" alt="Mzuni Design Project" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Mzuni Event poster Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="Images/World_healthF.jpg" alt="KOM Design Project" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">DMI-SJBU World health design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="Images/me.png" alt="KOM Design Project" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Ads Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-cta reveal">
+        <p>Want to see more? Let's discuss your project.</p>
+        <a href="#contact" class="btn-primary">Get In Touch</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="contact-inner">
+        <div class="contact-text reveal">
+            <p class="section-label">Let's Work Together</p>
+            <h2>Ready to bring<br>your idea to life?</h2>
+            <p>Whether you need a brand identity, a website, or a custom software solution — I'd love to hear about your project. Reach out and let's make something great.</p>
+            <div class="contact-links">
+                <a href="mailto:bakalicedric@gmail.com" class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div>
+                        <strong>Email</strong>
+                        <span>bakalicedric@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://wa.me/265983081808" target="_blank" class="contact-item">
+                    <span class="contact-icon">💬</span>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <span>+265 983 081 808</span>
+                    </div>
+                </a>
+                <a href="https://github.com/CedricBakali" target="_blank" class="contact-item">
+                    <span class="contact-icon">🐙</span>
+                    <div>
+                        <strong>GitHub</strong>
+                        <span>CedricBakali</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="contact-cta-box reveal">
+            <h3>Start a project</h3>
+            <p>Available for freelance work and long-term collaborations.</p>
+            <a href="mailto:bakalicedric@gmail.com" class="btn-primary" style="width:100%;text-align:center;margin-bottom:1rem;">Send Me an Email</a>
+            <a href="https://wa.me/265983081808" target="_blank" class="btn-whatsapp">Message on WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img src="Images/twentyWhite.png" alt="Logo" class="footer-logo">
+            <span>Twenty Two Creations</span>
+        </div>
+        <p class="footer-copy">© 2026 Twenty Two Creations. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="JS/main.js"></script>
+</body>
+</html>
