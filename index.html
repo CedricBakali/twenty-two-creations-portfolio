@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twenty Two Creations — Professional graphic design, web development, and digital branding studio based in Malawi.">
+    <title>Twenty Two Creations | Design & Development Studio</title>
+    <link rel="icon" type="image/png" href="images/twentyWhite.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div id="loader">
+    <div class="loader-content">
+        <img src="images/twentyWhite.png" width="679" height="680" alt="Twenty Two Creations Logo">
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+    <div class="brand" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <img src="images/twentyWhite.png" width="679" height="680" alt="Twenty Two Creations Logo" class="logo-img">
+        <span class="logo-text">Twenty<span class="logo-accent">Two - Creations</span></span>
+    </div>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Work</a>
+        <a href="#animated">Animated</a>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+    <a href="#hero" class="mob-link">Home</a>
+    <a href="#about" class="mob-link">About</a>
+    <a href="#services" class="mob-link">Services</a>
+    <a href="#portfolio" class="mob-link">Work</a>
+    <a href="#animated" class="mob-link">Animated</a>
+    <a href="#contact" class="mob-link">Hire Me</a>
+</div>
+
+<main id="main-content">
+<!-- HERO -->
+<section id="hero">
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="videos/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content reveal">
+        <img src="images/personal.jpg" alt="Portrait of Cedric Bakali" class="hero-photo" width="100" height="100">
+        <p class="hero-eyebrow">Based in Malawi · Available Worldwide</p>
+        <h1>I am a <span id="typing"></span><span class="cursor">|</span></h1>
+        <p class="hero-name">I'm <u>Cedric Bakali</u></p>
+        <p class="hero-sub">Turning ideas into powerful visuals and digital experiences.<br>Design that speaks. Code that works.</p>
+        <p class="hero-meta">BSc Computer Science &middot; Coding, graphic design and technology</p>
+        <div class="hero-actions">
+            <a href="#portfolio" class="btn-primary">View My Work</a>
+            <a href="#contact" class="btn-ghost">Let's Talk →</a>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip reveal">
+    <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Experience</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Projects Completed</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Client Satisfaction</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">2</span><span class="stat-label">Core Disciplines</span></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="about-inner reveal">
+        <div class="about-text">
+            <p class="section-label">About Me</p>
+            <h2>Where creativity<br>meets <em>code</em></h2>
+            <p>I am <strong>Cedric Bakali</strong>, a Computer Science student with a genuine interest in how software is built and how technology can be used to solve everyday problems. My studies have given me a solid foundation in programming, databases and web development, and I enjoy applying those skills to real projects.</p>
+            <p>What drives me is the combination of <em>logic and creativity</em> — writing code in Python, Java and JavaScript while also designing visuals that communicate an idea clearly. I am a fast learner, comfortable working in a team, and always open to new technical challenges.</p>
+            <a href="#contact" class="btn-primary" style="margin-top:2rem;display:inline-block;">Start a Project</a>
+        </div>
+        <div class="about-skills">
+            <div class="skill-item">
+                <div class="skill-label"><span>Graphic Design</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-label"><span>Web Development</span><span>75%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-label"><span>UI/UX Design</span><span>80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-label"><span>Brand Strategy</span><span>70%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- B. EDUCATIONAL BACKGROUND -->
+    <div class="about-block reveal">
+        <h3>Educational Background</h3>
+        <div class="table-wrap">
+            <table class="edu-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Qualification</th>
+                        <th scope="col">Programme of Study</th>
+                        <th scope="col">Period of Study</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Institution">DMI – St. John the Baptist University</td>
+                        <td data-label="Qualification">Bachelor of Science in Computer Science <em>(in progress)</em></td>
+                        <td data-label="Programme">Computer Science</td>
+                        <td data-label="Period">2024 – 2028</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Institution">Chisapi (Pvt) Secondary School</td>
+                        <td data-label="Qualification">Malawi School Certificate of Education (MSCE)</td>
+                        <td data-label="Programme">Secondary Education</td>
+                        <td data-label="Period">2020 - 2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- C + D. SKILLS AND INTERESTS -->
+    <div class="about-grid reveal">
+        <div class="about-block">
+            <h3>Technical Skills</h3>
+            <ul class="skills-list">
+                <li>Python programming</li>
+                <li>Java programming</li>
+                <li>JavaScript and web development</li>
+                <li>Database development (SQL)</li>
+                <li>HTML, CSS and front-end design</li>
+                <li>Graphic design</li>
+                <li>App development</li>
+            </ul>
+        </div>
+        <div class="about-block">
+            <h3>Interests &amp; Hobbies</h3>
+            <ul class="hobby-list">
+                <li>Coding</li>
+                <li>Playing volleyball</li>
+                <li>Singing and listening to music</li>
+                <li>Watching movies</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- E. CAREER ASPIRATIONS -->
+    <div class="about-block reveal">
+        <h3>Career Aspirations</h3>
+        <p>My goal is to grow into a professional software developer who builds practical, accessible technology. I intend to use what I am learning in programming, database development and web design to contribute to society by creating software that solves real problems for people and organisations.</p>
+        <ol class="career-list">
+            <li>Complete my Bachelor of Science in Computer Science and graduate with strong practical skills.</li>
+            <li>Develop as a software developer working on web, desktop and database solutions.</li>
+            <li>Use technology to solve everyday problems and contribute to my community.</li>
+        </ol>
+    </div>
+
+    <hr class="about-divider">
+
+    <!-- F. CONTACT INFORMATION -->
+    <div class="about-block about-contact reveal">
+        <h3>Contact Information</h3>
+        <div class="contact-links">
+            <a href="mailto:bakalicedric@gmail.com" class="contact-item">
+                <span class="contact-icon">📧</span>
+                <div>
+                    <strong>Email</strong>
+                    <span>bakalicedric@gmail.com</span>
+                </div>
+            </a>
+            <a href="https://github.com/CedricBakali" target="_blank" rel="noopener" class="contact-item">
+                <span class="contact-icon">🐙</span>
+                <div>
+                    <strong>GitHub</strong>
+                    <span>CedricBakali</span>
+                </div>
+            </a>
+            <a href="https://wa.me/265983081808" target="_blank" rel="noopener" class="contact-item">
+                <span class="contact-icon">💬</span>
+                <div>
+                    <strong>WhatsApp</strong>
+                    <span>+265 983 081 808</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <div class="section-header reveal">
+        <p class="section-label">What I Offer</p>
+        <h2>Services</h2>
+    </div>
+    <div class="services-grid reveal">
+        <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>Brand Identity</h3>
+            <p>Logo design, colour systems, typography, and brand guidelines that make your business unforgettable.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🌐</div>
+            <h3>Web Development</h3>
+            <p>Clean, fast, mobile-friendly websites built with HTML, CSS, JavaScript, and modern frameworks.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Social Media Design</h3>
+            <p>Eye-catching posts, covers, and content kits that keep your brand consistent across every platform.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🖨️</div>
+            <h3>Print Design</h3>
+            <p>Flyers, posters, banners, and event materials designed to grab attention in the real world.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Software Development</h3>
+            <p>Desktop apps, management systems, and custom software solutions built with Python and modern tools.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">📣</div>
+            <h3>Digital Marketing</h3>
+            <p>Social media strategy, content planning, and ad creative that helps your business grow online.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <div class="section-header reveal">
+        <p class="section-label">My Work</p>
+        <h2>Portfolio</h2>
+    </div>
+
+    <!-- Dev Projects -->
+    <div class="portfolio-category reveal">
+        <h3 class="portfolio-title"><span>Development Projects</span></h3>
+    </div>
+    <div class="dev-grid reveal">
+
+        <div class="project-card">
+            <a href="https://github.com/CedricBakali/AN-AI-BASED-GRAPHIC-DESIGN-QUALITY-ASSESMENT-AND-FEEDBACK-" target="_blank" rel="noopener" class="project-link" aria-label="Open project in a new tab"><img src="images/project-designscore.png" width="1200" height="675" alt="DesignScore web application showing a graphic design quality score, detected weaknesses and improvement recommendations" class="project-img" loading="lazy"></a>
+            <div class="project-tag">Web Application</div>
+            <h3>DesignScore – AI-Based Graphic Design Quality Assessment and Feedback System</h3>
+            <p>A web-based system that analyses completed graphic designs and provides quality scores, identifies design weaknesses and offers improvement recommendations.</p>
+            <div class="project-problem">
+                <strong>Problem Solved</strong>
+                <p>Emerging graphic designers and students often lack access to professional feedback when evaluating the quality of their designs.</p>
+            </div>
+            <strong class="project-label">Technologies Used</strong>
+            <div class="project-tech"><span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>OpenCV</span><span>Pillow</span><span>NIMA</span><span>CLIP</span></div>
+            <a href="https://github.com/CedricBakali/AN-AI-BASED-GRAPHIC-DESIGN-QUALITY-ASSESMENT-AND-FEEDBACK-" target="_blank" rel="noopener" class="project-btn">GitHub Repository ↗</a>
+        </div>
+
+        <div class="project-card">
+            <a href="https://github.com/CedricBakali/UDP-File-Transfer-Tool" target="_blank" rel="noopener" class="project-link" aria-label="Open project in a new tab"><img src="images/project-udp-transfer.png" width="1200" height="675" alt="UDP File Transfer Tool desktop application window with sender and receiver controls" class="project-img" loading="lazy"></a>
+            <div class="project-tag">Desktop App</div>
+            <h3>UDP File Transfer Tool</h3>
+            <p>A desktop application that allows users to transfer files between computers on the same network using UDP sockets.</p>
+            <div class="project-problem">
+                <strong>Problem Solved</strong>
+                <p>Provides a simple graphical way to transfer files between computers without relying on complicated manual transfer procedures.</p>
+            </div>
+            <strong class="project-label">Technologies Used</strong>
+            <div class="project-tech"><span>Python</span><span>Tkinter</span><span>UDP Sockets</span></div>
+            <a href="https://github.com/CedricBakali/UDP-File-Transfer-Tool" target="_blank" rel="noopener" class="project-btn">GitHub Repository ↗</a>
+        </div>
+
+        <div class="project-card">
+            <a href="https://github.com/CedricBakali/Hostel-Management-System" target="_blank" rel="noopener" class="project-link" aria-label="Open project in a new tab"><img src="images/project-hostel.png" width="1200" height="675" alt="Hostel Management System desktop application showing student records and room allocation" class="project-img" loading="lazy"></a>
+            <div class="project-tag">Desktop App</div>
+            <h3>Hostel Management System</h3>
+            <p>A desktop application for managing student records, room allocation and hostel fee information.</p>
+            <div class="project-problem">
+                <strong>Problem Solved</strong>
+                <p>Helps simplify hostel administration and reduce the difficulty of managing student and accommodation records manually.</p>
+            </div>
+            <strong class="project-label">Technologies Used</strong>
+            <div class="project-tech"><span>Python</span><span>SQLite</span><span>Tkinter</span></div>
+            <a href="https://github.com/CedricBakali/Hostel-Management-System" target="_blank" rel="noopener" class="project-btn">GitHub Repository ↗</a>
+        </div>
+
+        <div class="project-card">
+            <a href="https://github.com/CedricBakali/FocusFlow" target="_blank" rel="noopener" class="project-link" aria-label="Open project in a new tab"><img src="images/project-focusflow.png" width="1200" height="675" alt="FocusFlow productivity web application listing daily tasks with progress tracking" class="project-img" loading="lazy"></a>
+            <div class="project-tag">Web App</div>
+            <h3>FocusFlow</h3>
+            <p>A productivity application that helps users organise daily tasks, manage their time and monitor their progress.</p>
+            <div class="project-problem">
+                <strong>Problem Solved</strong>
+                <p>Helps users organise their daily activities and reduce unproductive use of time.</p>
+            </div>
+            <strong class="project-label">Technologies Used</strong>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://github.com/CedricBakali/FocusFlow" target="_blank" rel="noopener" class="project-btn">GitHub Repository ↗</a>
+        </div>
+
+        <div class="project-card">
+            <a href="https://dmiv.netlify.app/" target="_blank" rel="noopener" class="project-link" aria-label="Open project in a new tab"><img src="images/project-voting.png" width="1200" height="675" alt="DMI-SJBU Voting System web application homepage for the student elections" class="project-img" loading="lazy"></a>
+            <div class="project-tag">Web App · Live Demo</div>
+            <h3>DMI-SJBU Voting System</h3>
+            <p>A modern, secure electronic voting platform built for the 2025 DMI-SJBU Student Elections. Features real-time vote counting, secure authentication, and a clean admin dashboard.</p>
+            <div class="project-problem">
+                <strong>Problem Solved</strong>
+                <p>Running student elections on paper is slow to count and difficult to verify, so results are delayed and hard to trust.</p>
+            </div>
+            <strong class="project-label">Technologies Used</strong>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://dmiv.netlify.app/" target="_blank" rel="noopener" class="project-btn">Live Demo ↗</a>
+        </div>
+
+    </div>
+
+    <!-- GitHub profile link -->
+    <div class="portfolio-profile reveal">
+        <p>Want to see the code behind these projects?</p>
+        <a href="https://github.com/CedricBakali" target="_blank" rel="noopener" class="btn-ghost">View My GitHub Profile ↗</a>
+    </div>
+
+    <!-- Graphic Design Work -->
+    <div class="portfolio-category reveal" style="margin-top:4rem;">
+        <h3 class="portfolio-title"><span>Graphic Design Work</span></h3>
+    </div>
+    <div class="graphic-grid reveal">
+        <div class="graphic-item">
+            <img src="images/back.png" width="2700" height="2700" alt="Design Project — Background Artwork" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Background Artwork</p>
+                <p class="graphic-desc">Digital art composition</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="images/wishlist.png" width="2700" height="2700" alt="Wishlist Promotional Design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Wishlist Promo</p>
+                <p class="graphic-desc">Social media promotional flyer</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="images/xmax_flex.png" width="2700" height="2700" alt="Christmas Flex Design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Xmas Flex</p>
+                <p class="graphic-desc">Festive promotional design</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="images/Dec1.png" width="2700" height="2700" alt="December Campaign Design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">December Campaign</p>
+                <p class="graphic-desc">Event promotional material</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="images/Deli.jpg" width="2048" height="2048" alt="Deli Brand Design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Deli Branding</p>
+                <p class="graphic-desc">Restaurant brand identity</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="images/kom.jpg" width="2048" height="2048" alt="Dwangwa Touch TV Mic Battle event poster" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Mic battle Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+        <div class="graphic-item">
+            <img src="images/uchie.png" width="2800" height="3000" alt="Shop the latest Avon products and trendy slip-ons poster" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Avon product Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/salit_flyer.png" width="2800" height="3000" alt="Salit Loan quick loan promotional flyer with weekly interest rates" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Salit loan flyer Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/furnitureF.png" width="1080" height="1080" alt="Tripleline Furniture pay 50 percent deposit promotional flyer" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Furniture Shop flyer Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/beefinal.png" width="1080" height="1080" alt="BESQ beef sausage and meatballs product promotional flyer" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Beef shop flyerDesign</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/MzuniFinal.png" width="2800" height="3000" alt="Mzuni Design Project" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Mzuni Event poster Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/World_healthF.jpg" width="2800" height="3000" alt="DMI St John the Baptist University World Health Day event poster" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">DMI-SJBU World health design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/me.png" width="2800" height="3000" alt="Twenty Two Creations need a graphic designer promotional poster" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Ads Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/must.jpeg" width="1200" height="1500" alt="DMI Sports Directorate sports trip to MUST event poster" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Event poster Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/awwah1.png" width="2800" height="3000" alt="Vote Awwah Molah Abdul Events Director MASS 2026 elections campaign poster" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Ads Design</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/company profil.png" width="2480" height="3508" alt="Farm Tech agricultural technology company profile design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Company profile</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/poster.png" width="2480" height="3508" alt="Farm Tech agricultural technology company profile design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Company poster</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/business card.jpg" width="2480" height="3508" alt="Farm Tech agricultural technology company profile design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Business card</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/outleach1.png" width="2480" height="3508" alt="Farm Tech agricultural technology company profile design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Company profile</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/amah_flyer.png" width="2480" height="3508" alt="Farm Tech agricultural technology company profile design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Business flyer</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/jsy6.png" width="2480" height="3508" alt="Farm Tech agricultural technology company profile design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Business flyer</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/music_concert.png" width="2480" height="3508" alt="Farm Tech agricultural technology company profile design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Music Concert Flyer</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/chisomo2.png" width="2480" height="3508" alt="Farm Tech agricultural technology company profile design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Business flyer</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/mofam_out.png" width="2480" height="3508" alt="Farm Tech agricultural technology company profile design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">organisation poster</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+        <div class="graphic-item">
+            <img src="images/DelisterB.png" width="2480" height="3508" alt="Farm Tech agricultural technology company profile design" class="graphic-img" loading="lazy">
+            <div class="graphic-overlay">
+                <p class="graphic-title">Business flyer</p>
+                <p class="graphic-desc">Brand visual design</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="portfolio-cta reveal">
+        <p>Want to see more? Let's discuss your project.</p>
+        <a href="#contact" class="btn-primary">Get In Touch</a>
+    </div>
+</section>
+
+<!-- ANIMATED CONCEPTS -->
+<section id="animated">
+    <div class="section-header reveal">
+        <p class="section-label">Motion & Interaction</p>
+        <h2>Animated Concepts</h2>
+        <p class="anim-intro">A demonstration of creative animations built with web technologies. Each example below is implemented using CSS <code>@keyframes</code> and transitions — no animation libraries or frameworks.</p>
+    </div>
+
+    <div class="anim-grid">
+
+        <!-- ANIMATION 1 — FLOATING CREATIVE ELEMENTS -->
+        <article class="anim-card reveal">
+            <div class="anim-stage" aria-hidden="true">
+                <span class="float-shape float-square"></span>
+                <span class="float-shape float-bar"></span>
+                <span class="float-shape float-circle"></span>
+                <span class="float-shape float-dot"></span>
+            </div>
+            <p class="anim-index">Animation 01</p>
+            <h3 class="anim-title">Floating Creative Elements</h3>
+            <p class="anim-desc">Decorative shapes drift gently up and down on a smooth keyframe loop. Each element uses a different duration and a negative delay so they move out of step with one another.</p>
+            <p class="anim-tech">CSS keyframes · transform: translateY()</p>
+        </article>
+
+        <!-- ANIMATION 2 — TEXT REVEAL -->
+        <article class="anim-card reveal">
+            <div class="anim-stage anim-stage-text">
+                <p class="anim-text" aria-label="Design that moves.">
+                    <span style="--i:0">Design</span>
+                    <span style="--i:1">that</span>
+                    <span style="--i:2">moves.</span>
+                </p>
+            </div>
+            <p class="anim-index">Animation 02</p>
+            <h3 class="anim-title">Text Reveal Animation</h3>
+            <p class="anim-desc">A short creative message appears word by word. Each word slides and fades into place on a staggered delay, triggered when the section scrolls into view.</p>
+            <p class="anim-tech">CSS keyframes · animation-delay · .reveal trigger</p>
+        </article>
+
+        <!-- ANIMATION 3 — ROTATING & PULSING ELEMENT -->
+        <article class="anim-card reveal">
+            <div class="anim-stage" aria-hidden="true">
+                <span class="orbit-ring"></span>
+                <span class="orbit-core"></span>
+            </div>
+            <p class="anim-index">Animation 03</p>
+            <h3 class="anim-title">Rotating &amp; Pulsing Element</h3>
+            <p class="anim-desc">A dashed ring spins at a steady rate while the core pulses in scale and opacity, showing two independent animations running together on the same element group.</p>
+            <p class="anim-tech">CSS keyframes · rotate() · scale() · opacity</p>
+        </article>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="contact-inner">
+        <div class="contact-text reveal">
+            <p class="section-label">Let's Work Together</p>
+            <h2>Ready to bring<br>your idea to life?</h2>
+            <p>Whether you need a brand identity, a website, or a custom software solution — I'd love to hear about your project. Reach out and let's make something great.</p>
+            <div class="contact-links">
+                <a href="mailto:bakalicedric@gmail.com" class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div>
+                        <strong>Email</strong>
+                        <span>bakalicedric@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://wa.me/265983081808" target="_blank" rel="noopener" class="contact-item">
+                    <span class="contact-icon">💬</span>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <span>+265 983 081 808</span>
+                    </div>
+                </a>
+                <a href="https://github.com/CedricBakali" target="_blank" rel="noopener" class="contact-item">
+                    <span class="contact-icon">🐙</span>
+                    <div>
+                        <strong>GitHub</strong>
+                        <span>CedricBakali</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="contact-cta-box reveal">
+            <h3>Start a project</h3>
+            <p>Available for freelance work and long-term collaborations.</p>
+            <a href="mailto:bakalicedric@gmail.com" class="btn-primary" style="width:100%;text-align:center;margin-bottom:1rem;">Send Me an Email</a>
+            <a href="https://wa.me/265983081808" target="_blank" rel="noopener" class="btn-whatsapp">Message on WhatsApp</a>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img src="images/twentyWhite.png" width="679" height="680" alt="Logo" class="footer-logo">
+            <span>Twenty Two Creations</span>
+        </div>
+        <p class="footer-copy">© 2026 Twenty Two Creations. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
